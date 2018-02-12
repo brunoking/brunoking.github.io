@@ -6,14 +6,23 @@
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: url('../img/leaf.png') no-repeat top fixed;
+  background: url('../img/EV.jpg') no-repeat top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   
 }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #FFFF00;
+    color: #FFC0CB;
+}
+.btn{
 
+  color:  white;
+  background-color: #89ce40;
+  border-color: #89ce40;
+}
 h1, h2, h3, h4, h5, h6, .text-heading {
   font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -24,7 +33,7 @@ h1, h2, h3, h4, h5, h6, .text-heading {
   text-align:center; 
   background: whiteSmoke;
   font-weight: bold;
-  color: #444;
+  color: #444449;
   text-decoration: none;
   position:fixed;
   bottom:20px;
@@ -85,7 +94,16 @@ hr.divider {
   border-color: #292b2c;
   max-width: 250px;
 }
+.prijelaz:hover{
+opacity: 1;
+ transition: .3s ease;
+ transition-timing-function: linear;
 
+color: #89ce40 !important;
+
+
+
+}
 .map-container iframe {
   pointer-events: none;
 }
@@ -101,5 +119,63 @@ hr.divider {
 }
 
 
+.facebook:hover{
+
+opacity: 0.5;
+ transition: .2s ease;
+filter: alpha(opacity=50);
+
+}
+.youtube:hover{
+
+  opacity: 0.5;
+ transition: .2s ease;
+filter: alpha(opacity=50);
+-
+}
+
+.logo:hover{
+opacity: 0.6;
+transition-timing-function: linear;
+ transition: .4s ease;
+ transition: .4s ease-in-out;
+filter: alpha(opacity=50);
+ 
+}
+
+.carousel-indicators .active{
+    background-color: #89ce40;
+}
 
 
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+
+  background-size: 100%, 100%;
+  border-radius: 50%;
+
+  background-image: none;
+}
+.carousel-control-prev-icon{
+  height: 100px;
+  width: 100px;
+
+  background-size: 100%, 100%;
+  border-radius: 50%;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: #89ce40;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: #89ce40;
+}
